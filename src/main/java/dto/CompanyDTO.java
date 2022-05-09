@@ -1,21 +1,21 @@
 package dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class CompanyDTO {
-
     private int id;
 
     private String name;
-
-    public CompanyDTO() {
-    }
-
-    public CompanyDTO(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
 
     @Override
     public String toString() {
